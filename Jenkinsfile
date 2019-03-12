@@ -11,7 +11,7 @@ currentBuild.result = "SUCCESS"
 
        stage('Run Docker'){
 
-           bat "docker build -t myApp -f Dockerfile ."
+           bat "docker build -t myapp -f Dockerfile ."
        }
 
     }
