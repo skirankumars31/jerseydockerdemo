@@ -9,6 +9,11 @@ currentBuild.result = "SUCCESS"
           checkout scm
        }
 
+       stage('Run Docker'){
+
+           bat "docker build -t myApp -f Dockerfile ."
+       }
+
     }
     catch (err) {
 
